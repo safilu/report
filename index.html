@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отчет по практике</title>
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+
+    <!-- Шапка / Баннер -->
+    <div class="banner-container" onclick="openLightbox(0)">
+        <!-- Вставьте сюда свою картинку для баннера -->
+        <img src="https://picsum.photos" alt="Титульный слайд" class="banner-img" id="mainBannerImg">
+        <div class="banner-text">
+            <h1>Отчет по практике “Учебная практика 05 ВЕБ” <br>Учащегося: Татаренкова Софья <br>Группа: Р212/24</h1>
+            <p>Нажмите для просмотра отчета</p>
+        </div>
+    </div>
+
+    <!-- Двухколоночный контент -->
+    <main class="main-container">
+        
+        <!-- Левая колонка: Содержание -->
+        <aside class="sidebar">
+            <h3>Дневник  </h3>
+            <nav>
+                <ul>
+                    <li><a href="#chapter1">Глава 1: Введение и аналитика</a></li>
+                    <li><a href="#chapter2">Глава 2: Производственные итоги</a></li>
+                    <li><a href="#chapter3">Глава 3: Финансовые показатели</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Правая колонка: Текст отчета -->
+        <article class="content">
+            
+            <section id="chapter1">
+                <h2>Глава 1: Введение и аналитика</h2>
+                <p>В данном разделе представлены ключевые аналитические выводы за прошедший период. Мы провели глубокое исследование рынка, выявили основные драйверы роста и определили уязвимости, которые требуют оперативного вмешательства. Автоматический перенос длинных русских слов (например, высокопревосходительство или децентрализация) работает корректно благодаря встроенным CSS-свойствам.</p>
+                <img src="https://picsum.photos" alt="Аналитика" class="report-img">
+                <p>Дополнительные статистические сведения подтверждают правильность выбранного курса развития компании в текущих экономических условиях.</p>
+            </section>
+
+            <section id="chapter2">
+                <h2>Глава 2: Производственные итоги</h2>
+                <p>Наши производственные мощности были оптимизированы на тридцать процентов, что позволило существенно снизить себестоимость выпускаемой продукции. Внедрение передовых автоматизированных систем минимизировало количество брака и повысило общую безопасность на рабочих местах.</p>
+                <img src="https://picsum.photos" alt="Производство" class="report-img">
+            </section>
+
+            <section id="chapter3">
+                <h2>Глава 3: Финансовые показатели</h2>
+                <p>Финансовая отчетность демонстрирует стабильный прирост чистой прибыли. Мы привлекли новые инвестиционные портфели и успешно диверсифицировали риски за счет выхода на смежные рынки сбыта. Подробные графики и таблицы доступны в полной версии документа.</p>
+            </section>
+
+        </article>
+    </main>
+
+    <!-- Лайтбокс для пролистывания картинок баннера -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-btn close-btn" onclick="closeLightbox()">&times;</button>
+        <button class="lightbox-btn prev-btn" onclick="changeImage(-1)">&#10094;</button>
+        <img src="" alt="Увеличенное изображение" class="lightbox-img" id="lightboxImg">
+        <button class="lightbox-btn next-btn" onclick="changeImage(1)">&#10095;</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
